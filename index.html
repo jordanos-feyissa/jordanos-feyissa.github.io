@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume Portfolio</title>
+    <meta
+      name="description"
+      content="Resume portfolio with GitHub projects, data analysis work, and visitor check-ins."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span data-bind="name">Resume Portfolio</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#github">GitHub</a>
+        <a href="#resume">Resume</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-visual">
+          <div class="profile-photo">
+            <img id="profilePhoto" alt="Profile photo" />
+            <span id="photoFallback" data-bind="name">Your Name</span>
+          </div>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow" data-bind="location">Italy</p>
+          <h1 data-bind="name">Your Name</h1>
+          <p class="role" data-bind="role">Data Analyst | Python | Machine Learning</p>
+          <p class="intro" data-bind="about">
+            I work with data to turn messy questions into clear analysis, useful dashboards,
+            and machine learning experiments.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">View Work</a>
+            <a class="button secondary" data-bind-href="github" href="#github">GitHub</a>
+            <a class="button secondary" data-bind-href="email" href="mailto:your.email@example.com">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split" id="resume">
+        <div>
+          <p class="section-kicker">Profile</p>
+          <h2>Resume Snapshot</h2>
+        </div>
+        <div class="summary-grid">
+          <article>
+            <h3>Skills</h3>
+            <div class="tag-list" id="skillsList"></div>
+          </article>
+          <article>
+            <h3>Experience</h3>
+            <div id="experienceList"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="section-kicker">Selected Work</p>
+          <h2>Analysis projects and notebooks</h2>
+        </div>
+        <div class="project-grid" id="featuredProjects"></div>
+      </section>
+
+      <section class="section github-band" id="github">
+        <div class="section-heading">
+          <p class="section-kicker">GitHub</p>
+          <h2>Explore my full GitHub profile</h2>
+        </div>
+        <div class="repo-toolbar">
+          <a class="button secondary small" data-bind-href="github" href="#">View GitHub Profile</a>
+        </div>
+      </section>
+
+      <section class="section split admin-only" id="visitors">
+        <div>
+          <p class="section-kicker">Visitors</p>
+          <h2>See who checked your portfolio</h2>
+        </div>
+        <div class="visitor-panel">
+          <form id="checkInForm" class="checkin-form">
+            <label>
+              Name
+              <input required name="name" autocomplete="name" placeholder="Jane Smith" />
+            </label>
+            <label>
+              Company or role
+              <input name="company" autocomplete="organization" placeholder="Recruiter, hiring manager, founder" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Optional note"></textarea>
+            </label>
+            <button class="button primary" type="submit">Check In</button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+          <div>
+            <h3>Recent check-ins</h3>
+            <div class="visitor-list" id="visitorList"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span data-bind="name">Your Name</span>
+      <span>Portfolio resume</span>
+      <a data-bind-href="email" href="mailto:your.email@example.com">Email</a>
+      <a data-bind-href="linkedin" href="#">LinkedIn</a>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
