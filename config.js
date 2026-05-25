@@ -6,7 +6,7 @@ window.PORTFOLIO_CONFIG = {
   githubUsername: "https://github.com/jordanos-feyissa",
   linkedinUrl: "https://www.linkedin.com/in/jordanos-feyissa",
   resumeUrl: "",
-  avatarUrl: "pp_port.jpg",
+  avatarUrl: "formal_pp.jpg",
   about:
     "I work with data to transform complex questions into clear analysis and actionable insights. My projects focus on data cleaning, exploratory analysis, visualization, and machine learning using Python. This portfolio showcases my hands-on work with real datasets, including predictive modeling, feature engineering, and analytical projects designed to strengthen both technical and problem-solving skills in data science.",
   skills: [ {  "Programming & Data Analysis": [
