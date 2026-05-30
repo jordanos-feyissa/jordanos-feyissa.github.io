@@ -71,6 +71,27 @@ window.PORTFOLIO_CONFIG = {
       github: ""
     },
   ],
+  education: [
+          {
+      degree: "Master of Science in Data Science and Business Informatics",
+      school: "University of Pisa",
+      period: "2021 - 2026",
+      details: "Academic Focus: Data Mining, Statistics for Data Science,  Decision Support Systems, Text Analytics, Business Process Modeling" ,
+      details2: "Thesis : AI and Market Failures in hiring"
+    },
+    {
+      degree: "Bachelor of Arts in Business Administration and Information System",
+      school: "Addis Abeba University",
+      period: "2016 - 2019",
+      details: "Academic Focus: Database Management, Statistics for Management, Cost and Managerial accounting, Project Management, Marketing"         
+    },
+    {
+      degree: "High School Diploma in Administration, Finance and Marketing ",
+      school: "Istituto Italiano Statale Omnicomprensivo",
+      period: "2011 - 2016",
+      details: "Focus: Accounting Principles, with emphasis on Balance Sheet and Income Statement (Conto Economico) preparation"
+    }
+  ],
   experience: [
     {
       title: "Night Auditor",
@@ -78,7 +99,7 @@ window.PORTFOLIO_CONFIG = {
       period: "10/2022 - Current",
       details: [
         "Managed overnight front-desk operations, including reservations, check-in, check-out, and guest records.",
-        "Supported guest safety, issue resolution, service quality, and smooth daily hotel operations."
+        "Supported guest safety, resolved issues, ensured service quality, and maintained smooth nightly hostel operations."
       ]
     },
     {

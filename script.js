@@ -118,6 +118,26 @@ function renderExperienceDetails(details) {
   return `<p>${escapeHtml(details)}</p>`;
 }
 
+function renderEducation() {
+  const list = get("#educationList");
+
+  if (!list) {
+    return;
+  }
+
+  list.innerHTML = (config.education || [])
+    .map(
+      (item) => `
+        <div class="education-item">
+          <h4>${escapeHtml(item.degree)}</h4>
+          <p><strong>${escapeHtml(item.school)}</strong>${item.period ? ` | ${escapeHtml(item.period)}` : ""}</p>
+          ${item.details ? `<p>${escapeHtml(item.details)}</p>` : ""}
+        </div>
+      `
+    )
+    .join("");
+}
+
 function renderFeaturedProjects() {
   const list = get("#featuredProjects");
   list.innerHTML = (config.featuredProjects || [])
@@ -246,6 +266,7 @@ function escapeHtml(value = "") {
 
 setTextBindings();
 renderSkills();
+renderEducation();
 renderExperience();
 renderFeaturedProjects();
 setupCheckIns();
